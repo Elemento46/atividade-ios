@@ -1,0 +1,16 @@
+<script>
+/*2. Manipulação de String – Formatação de Nome
+Descrição: Crie um programa que receba uma string com o nome completo do aluno e retorne o
+nome e sobrenome separados.
+Requisitos:
+Utilize métodos de string (como split, toUpperCase, substring, etc.) para separar e reorganizar o
+nome.
+Considere nomes compostos e garanta que o últimos elementos sejam o sobrenome.*/
+
+    let primeiroNome = prompt('Informe seu primeiro nome:');
+    let nomeDoMeio = prompt('Informe seu nome do Meio:');
+    let sobrenome = prompt('Informe seu Sobrenome (Último nome)');
+
+    alert(primeiroNome.toUpperCase() + ' ' + nomeDoMeio.toUpperCase() + ' ' + sobrenome.toUpperCase());
+    alert(primeiroNome + ' ' + nomeDoMeio.split(nomeDoMeio) + ' ' + sobrenome);
+</script>
