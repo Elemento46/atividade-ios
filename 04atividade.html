@@ -8,10 +8,11 @@ Utilize if/else para mostrar uma mensagem indicando se a palavra foi encontrada 
 Pegue a mensagem com prompt() e exiba com Alert().*/
 
 let texto = prompt('Digite um texto:')
+let palavra = prompt('Digite uma palavra para verificar se foi usada no texto: ')
 
-if (texto.includes("JavaScript")) {
-    alert("Você falou com sucesso sobre JavaScript")
+if (texto.includes(palavra)) {
+    alert("A palavra está incluída no texto.")
 }else {
-    alert("Sua explicação não menciona JavaScript")
+    alert("Palavra não encontrada.")
 }
 </script>
